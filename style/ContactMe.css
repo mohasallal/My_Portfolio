@@ -1,0 +1,207 @@
+.ContactMe {
+  position: relative;
+}
+
+.ContactMe__PaintBrush {
+  width: 5%;
+  display: none;
+  position: absolute;
+  top: -100px;
+  left: 50px;
+}
+
+.ContactMe__wrapper {
+  width: 100%;
+  margin-bottom: 50px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+}
+.ContactMe {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ContactMe__Question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 600px;
+}
+
+.ContactMe__Question h3 {
+  font-size: var(--size-2xl);
+}
+
+.ContactMe__Question h3 img {
+  display: inline-block;
+  transform: translate(10%, 25%);
+}
+
+.ContactMe__Question p {
+  font-size: var(--size-sm);
+}
+
+.ContactMe__Art {
+  display: none;
+  position: relative;
+  width: 450px;
+  height: auto;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ContactMe__Art img {
+  position: absolute;
+}
+
+.Contact__firststar {
+  top: 63%;
+  left: 66%;
+}
+.Contact__secondstar {
+  top: 40%;
+  left: 51%;
+  transform: translateY(-50%);
+}
+
+.line1 {
+  rotate: 90deg;
+  left: 20%;
+}
+
+.line2 {
+  rotate: 90deg;
+  left: 35%;
+}
+.line3 {
+  rotate: 90deg;
+  left: 5%;
+}
+
+.line4 {
+  top: 40%;
+}
+
+.line5 {
+  top: 70%;
+}
+
+.ContactMe__Social {
+  align-self: center;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+  background-color: var(--iconsbg-clr);
+  border-radius: 30px;
+  width: fit-content;
+  padding: 5px;
+  position: relative;
+}
+
+.ContactMe__Social::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(
+    200deg,
+    var(--softblue-clr),
+    var(--lightBlue-clr)
+  );
+  background-clip: border-box;
+  border-radius: inherit;
+  transition: background 0.3s;
+}
+
+.ContactMe__Social li {
+  border-radius: 30px;
+}
+
+.ContactMe__Social li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  padding: 0.5em 1em;
+  border-radius: 20px;
+}
+
+.ContactMe__Social li:hover {
+  background-color: var(--iconsHVR-clr);
+  transition-duration: 0.3s;
+}
+
+.ContactMe__Social li a img {
+  width: 20px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.BackToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.BackToTop button {
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.BackToTop button img {
+  width: 40px;
+  height: auto;
+  aspect-ratio: 1/1;
+  rotate: 180deg;
+}
+
+@media (min-width: 768px) {
+  .ContactMe li a img {
+    width: 24px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ContactMe__PaintBrush {
+    display: block;
+  }
+
+  .ContactMe__Art {
+    display: block;
+  }
+
+  .ContactMe__Social li a img {
+    width: 30px;
+    padding: 0px;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ContactMe__Question h3 {
+    font-size: var(--size-4xl);
+  }
+
+  .ContactMe__Question p {
+    font-size: var(--size-base);
+  }
+}

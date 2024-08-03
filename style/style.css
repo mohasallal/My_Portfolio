@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  line-height: calc(1em + 0.5rem);
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", "Roboto", "Open Sans", sans-serif;
+  background-color: var(--black-clr);
+  color: var(--white-color);
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+strong {
+  color: var(--teal-clr);
+}
+
+.btn {
+  background-color: var(--white-color);
+  border-radius: 30px;
+  font-size: var(--size-base);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-clr);
+}
+
+.btn:hover {
+  scale: 1.075;
+  transition-duration: 0.3s;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--teal-clr);
+  padding: calc(0.5em + 3.5px) calc(1em + 3.5px);
+}
+
+.small {
+  font-size: var(--size-xs);
+}
+
+.star {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    scale: 1.2;
+  }
+  50% {
+    opacity: 0.5;
+    scale: 1;
+  }
+  100% {
+    opacity: 1;
+    scale: 1.2;
+  }
+}
+
+/*scrollbar*/
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--softblue-clr);
+  outline: 1px solid var(--softblue-clr);
+}
+
+/*mouse*/
+
+
+@media (min-width: 475px) {
+  .small {
+    font-size: var(--size-sm);
+  }
+}
+@media (min-width: 640px) {
+  .small {
+    font-size: var(--size-base);
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-size: var(--size-base);
+  }
+}

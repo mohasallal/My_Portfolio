@@ -1,0 +1,117 @@
+.loading {
+  overflow: hidden;
+  filter: blur(40px) grayscale(100%);
+  overflow: hidden;
+}
+
+.loaded {
+  filter: blur(0px) grayscale(0%);
+  transition: 0.7s ease-in-out;
+}
+
+.loading2 {
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.loaded2 {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1s ease-out;
+}
+
+.loading3 {
+  overflow: hidden;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.loaded3 {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 1s ease-out;
+}
+
+.loading4 {
+  overflow: hidden;
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.loaded4 {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 1s ease-out;
+}
+
+.loading5,
+.loading6,
+.loading7 {
+  opacity: 0;
+}
+
+.loaded5,
+.loaded6,
+.loaded7 {
+  opacity: 1;
+}
+
+.loaded5 {
+  animation: shake 1.5s 1;
+}
+.loaded6 {
+  animation: fly 3s 1;
+}
+.loaded7 {
+  animation: shake2 2s 1;
+}
+
+@keyframes shake {
+  0% {
+    rotate: -20deg;
+    scale: 0.9;
+  }
+
+  50% {
+    rotate: 60deg;
+    scale: 1.1;
+  }
+
+  100% {
+    rotate: 45deg;
+    scale: 1;
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-300px, 300px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes shake2 {
+  0% {
+    rotate: 0deg;
+    scale: 0.9;
+  }
+
+  30% {
+    rotate: -30deg;
+    scale: 1.2;
+  }
+
+  60% {
+    rotate: 30deg;
+    scale: 1.1;
+  }
+
+  100% {
+    rotate: 0deg;
+    scale: 1;
+  }
+}
