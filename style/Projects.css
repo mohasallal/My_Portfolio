@@ -15,7 +15,7 @@
 }
 
 .Projects__card h3,
-p {
+.Projects__card p {
   align-self: flex-start;
   text-align: left;
 }
@@ -84,7 +84,7 @@ p {
   }
 
   .Projects__card h3,
-  p {
+  .Projects__card p {
     align-self: center;
     text-align: center;
   }
